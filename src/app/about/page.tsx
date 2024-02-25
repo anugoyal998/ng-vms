@@ -1,35 +1,54 @@
-import Image from "next/image";
 import React from "react";
 import Award from "./_sections/award";
 import MoneyRaise from "./_sections/MoneyRaise";
 import MeetOurTeam from "./_sections/MeetOurTeam";
-import Volunteer from "./_sections/Volunteer";
-import Events from "./_sections/Events";
+import Volunteer from "@/components/volunteer/volunteer";
+import Events from "@/components/events/events";
+import Supporters from "@/components/supporters/supporters";
 const data = [
   {
     image: "awardbadge.svg",
     year: "2021",
     title: "Best NGO Award",
-    location: "New York, USA"
+    location: "New York, USA",
   },
   {
     image: "awardbadge.svg",
     year: "2021",
     title: "Best NGO Award",
-    location: "New York, USA"
+    location: "New York, USA",
   },
   {
     image: "awardbadge.svg",
     year: "2021",
     title: "Best NGO Award",
-    location: "New York, USA"
+    location: "New York, USA",
   },
   {
     image: "awardbadge.svg",
     year: "2021",
     title: "Best NGO Award",
-    location: "New York, USA"
-  }
+    location: "New York, USA",
+  },
+];
+
+const event_info = [
+  {
+    date: "13 APR",
+    name: "A day with our wonderful children",
+  },
+  {
+    date: "13 APR",
+    name: "A day with our wonderful children",
+  },
+  {
+    date: "13 APR",
+    name: "A day with our wonderful children",
+  },
+  {
+    date: "13 APR",
+    name: "A day with our wonderful children",
+  },
 ];
 
 export default function page() {
@@ -93,18 +112,7 @@ export default function page() {
             </p>
           </div>
         </div>
-
-        <div className="pt-16">
-          <h1 className="text-lg">our supporters</h1>
-          <div className="flex pt-10 justify-between">
-            <Image src="logo1.svg" width={142} height={28} alt="" />
-            <Image src="logo2.svg" width={142} height={28} alt="" />
-            <Image src="logo3.svg" width={142} height={28} alt="" />
-            <Image src="logo4.svg" width={142} height={28} alt="" />
-            <Image src="logo5.svg" width={142} height={28} alt="" />
-            <Image src="logo6.svg" width={142} height={28} alt="" />
-          </div>
-        </div>
+        <Supporters className="pt-16" />
       </div>
       <div className="pt-20 px-24">
         <h1 className="font-bold text-5xl flex justify-center">
@@ -113,25 +121,22 @@ export default function page() {
         {}
         <div className="flex justify-between pt-16 px-20">
           {data.map((item, index) => (
-            <Award
-              key={`award-${index}`}
-              {...item}
-            />
+            <Award key={`award-${index}`} {...item} />
           ))}
         </div>
       </div>
 
       <div className="mt-20 px-24">
-        <MoneyRaise/>
+        <MoneyRaise />
       </div>
       <div className="mt-20 px-24">
-        <MeetOurTeam/>
+        <MeetOurTeam />
       </div>
       <div className="mt-20 px-24 ">
-        <Volunteer/>
+        <Volunteer />
       </div>
       <div className="mt-20 px-24">
-          <Events/>
+        <Events data={event_info} />
       </div>
     </div>
   );

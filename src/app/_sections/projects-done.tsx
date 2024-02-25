@@ -27,7 +27,7 @@ const data = [
 
 export default function ProjectsDone() {
   return (
-    <div className="px-8 py-12">
+    <div className="px-20 py-12">
       <div className="grid grid-cols-3">
         <div className="flex gap-2 col-span-2">
           <div className="bg-primary h-[2px] w-16 mt-3" />
@@ -47,7 +47,7 @@ export default function ProjectsDone() {
             style={{
               background: `url(${image})`,
               height: "350px",
-              width: "400px",
+              width: "350px",
             }}
             className="rounded-2xl px-8 py-12 flex flex-col justify-between"
           >

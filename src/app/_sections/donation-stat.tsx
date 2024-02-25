@@ -3,7 +3,7 @@ import React from "react";
 
 export default function DonationStat() {
   return (
-    <div className="px-8 py-12 bg-black flex items-center justify-between">
+    <div className="px-20 py-12 bg-black flex items-center justify-between">
       <div>
         <p className="text-6xl font-bold text-white w-[85%]">
           How we spend your donations and where it goes

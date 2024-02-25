@@ -26,7 +26,7 @@ const data = [
 
 export default function WhatWeDo() {
   return (
-    <div className="bg-[#FCEDC6] py-12 px-8 grid grid-cols-7 gap-10 items-center">
+    <div className="bg-[#FCEDC6] py-12 px-20 grid grid-cols-7 gap-10 items-center">
       <div className="flex gap-2 col-span-5">
         <div className="bg-primary h-[2px] w-8 mt-3" />
         <div>

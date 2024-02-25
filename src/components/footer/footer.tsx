@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
-    <div className="bg-[#0B0706] px-8 py-12 flex justify-between">
+    <div className="bg-[#0B0706] px-20 py-12 flex justify-between">
       {/* logo */}
       <p className="text-white">NGMVS</p>
       <div className="flex gap-16">
