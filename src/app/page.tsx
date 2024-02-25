@@ -8,6 +8,7 @@ import DonationStat from "./_sections/donation-stat";
 import Footer from "@/components/footer/footer";
 import Volunteer from "@/components/volunteer/volunteer";
 import Events from "@/components/events/events";
+import ContactUs from "./_sections/contact-us";
 
 const event_info = [
   {
@@ -43,6 +44,7 @@ export default function page() {
       <div className="px-20 py-12">
         <Events data={event_info} />
       </div>
+      <ContactUs />
       <Footer />
     </div>
   );

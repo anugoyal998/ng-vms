@@ -22,7 +22,7 @@ interface EventsProps extends React.HTMLAttributes<HTMLDivElement> {
 const Events = React.forwardRef<HTMLDivElement, EventsProps>(
   ({ data, ...props }, ref) => {
     return (
-      <div {...props} ref={ref}>
+      <div id="events" {...props} ref={ref}>
         <div className="flex ">
           <p className="text-4xl whitespace-nowrap">Our Events</p>
           <div className="bg-gray-300 h-[2px] w-full mt-5 ml-2" />

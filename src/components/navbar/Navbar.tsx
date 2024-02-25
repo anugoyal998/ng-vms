@@ -10,8 +10,8 @@ export default function Navbar() {
       <div className="flex justify-between gap-11">
         <NavLink path="/" label="Home" />
         <NavLink path="/about" label="About" />
-        <NavLink path="/media" label="Media" />
-        <NavLink path="/contact" label="Contact" />
+        <NavLink path="/#what-we-do" label="What We Do" />
+        <NavLink path="/#contact-us" label="Contact" />
       </div>
       <Button>Donate</Button>
     </div>

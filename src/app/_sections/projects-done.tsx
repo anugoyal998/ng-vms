@@ -27,7 +27,7 @@ const data = [
 
 export default function ProjectsDone() {
   return (
-    <div className="px-20 py-12">
+    <div id="projects-done" className="px-20 py-12">
       <div className="grid grid-cols-3">
         <div className="flex gap-2 col-span-2">
           <div className="bg-primary h-[2px] w-16 mt-3" />

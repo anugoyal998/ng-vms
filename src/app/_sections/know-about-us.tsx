@@ -1,6 +1,7 @@
 import Supporters from "@/components/supporters/supporters";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function KnowAboutUs() {
@@ -25,7 +26,7 @@ export default function KnowAboutUs() {
               libero reiciendis numquam obcaecati quod.
             </p>
             <Button className="mt-8 px-6" variant="secondary">
-              Learn more
+              <Link href="/about">Learn more</Link>
             </Button>
           </div>
         </div>

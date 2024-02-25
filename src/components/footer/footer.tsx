@@ -12,33 +12,33 @@ export default function Footer() {
           <Link href="/" className="text-white hover:text-white/80">
             Home
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="/about" className="text-white hover:text-white/80">
             About us
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="/about" className="text-white hover:text-white/80">
             Team
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="#what-we-do" className="text-white hover:text-white/80">
             What we do
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="#contact-us" className="text-white hover:text-white/80">
             Contact
           </Link>
         </div>
         <div className="flex flex-col gap-3">
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="#projects-done" className="text-white hover:text-white/80">
             More
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="#projects-done" className="text-white hover:text-white/80">
             Projects
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="#events" className="text-white hover:text-white/80">
             Events
           </Link>
           <Link href="/" className="text-white hover:text-white/80">
             Donate
           </Link>
-          <Link href="/" className="text-white hover:text-white/80">
+          <Link href="#projects-done" className="text-white hover:text-white/80">
             Blog
           </Link>
         </div>
@@ -68,7 +68,7 @@ export default function Footer() {
           <input
             type="email"
             placeholder="Your Email"
-            className="text-[#EBF0F9]/30 outline-none border border-[#EBF0F9]/30 px-4 py-3"
+            className="text-[#EBF0F9]/30 outline-none border border-[#EBF0F9]/30 px-4 py-3 w-full"
             style={{
               background: "none",
               borderTopLeftRadius: "4px",
